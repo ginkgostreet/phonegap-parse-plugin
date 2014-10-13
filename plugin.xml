@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.parse.cordova.core.pushplugin"
-      version="0.1.0">
-    <name>phonegap-parse-plugin</name>
-    <description>phonegap parse plugin</description>
+<plugin
+  xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  id="com.ginkgostreet.cordova.parse"
+  version="0.1.0"
+>
+    <name>cordova-parse-plugin</name>
+    <description>cordova parse plugin</description>
 
     <js-module src="www/cdv-plugin-parse.js" name="ParsePlugin">
         <clobbers target="window.parsePlugin" />
@@ -50,7 +51,7 @@
         <source-file src="src/android/parse/Parse-1.8.2.jar" target-dir="libs" framework="true" />
         <source-file src="src/android/ParsePlugin.java" target-dir="src/org/apache/cordova/core" />
         <!--<source-file src="src/android/ParseApplication.java" target-dir="src/org/apache/cordova/core" />-->
-        
+
         <info><![CDATA[
 A couple of changes are needed to receive push notifications when the app is not
 running on Android:
