@@ -25,6 +25,7 @@ public class ParseApplication extends Application
 	public void onCreate() {
 		super.onCreate();
 		// register device for parse
+		Parse.enableLocalDatastore(this);
 		Parse.initialize(this, "<%=app.parse.app_id%>", "<%=app.parse.client_key%>");
 		PushService.setDefaultPushCallback(this, MainActivity.class);
 		ParseInstallation.getCurrentInstallation().saveInBackground();
